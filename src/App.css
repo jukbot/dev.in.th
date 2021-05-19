@@ -14,14 +14,17 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #333333;
+}
+
+.App-icon {
+  font-size: 8rem;
 }
 
 .App-link {
@@ -37,6 +40,38 @@
   }
 }
 
-button {
-  font-size: calc(10px + 2vmin);
+h1 {
+  color: #000;
+  background: linear-gradient(to right, #000 0%, #cc09bd 20%, #1821b9 40%, #04fefe 60%, #2025bf 80%, #f90064 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 30s infinite linear;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+p {
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+@keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
 }
